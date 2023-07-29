@@ -1,0 +1,37 @@
+.vote {
+    margin:1rem; /* If you want dots under the hoverable text */
+    display: inline-block;
+    position: relative;
+  }
+  
+  /* vote text */
+  .vote .votetext {
+    text-align: center;
+    visibility: hidden;
+    position: absolute;
+    z-index: 2;
+    min-width: 30px;
+    color: white;
+    font-size: 12px;
+    background-color: gray;
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px;
+    top: -40px;
+    left: -30%;
+  }
+
+  .vote .votetext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: gray transparent transparent transparent;
+  }
+  
+  /* Show the vote text when you mouse over the vote container */
+  .vote:hover .votetext {
+    visibility: visible;
+  }

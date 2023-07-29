@@ -1,0 +1,16 @@
+/node_modules
+
+##client
+# dependencies
+/client/node_modules
+
+# production
+/client/build
+
+# misc
+/client/.env
+
+##server
+/server/credentials.json
+/server/node_modules
+/server/mongodb-data

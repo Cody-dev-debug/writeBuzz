@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "db": "mongod --port 27018 --dbpath mongodb-data --noauth",
+    "dev": "npm-run-all --parallel start db",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@socket.io/mongo-adapter": "^0.3.0",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.10.1",
+    "mongodb": "^5.7.0",
+    "socket.io": "^4.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
